@@ -23,12 +23,12 @@ def num_check(question):
                 print()
 
         except ValueError:
-            print(error)    
+            print(error)        
 
 
 
 # Main Routine goes here
-
+# no idea what is this for???
 
 # Introduction / Heading print statements
 print()
@@ -40,16 +40,19 @@ keep_going = ""
 while keep_going == "":
 
     # call your number checker function three times to get the to get the
+  
     # width, length and cost_per_m of the fencing
     width = num_check("width:")
     print()
     length = num_check("length:")
     print()
     cost = num_check("cost / m:")
+    
     # Calulate perimeter (width + length) x 2
     perimeter= (width + length) * 2
     # Calculate the cost of the fencing (perimeter x price / meter)
     cost = (perimeter * cost)
+    
     # Output the perimeter and cost of the fencing
     print("Perimeter: {:.2f} m".format(perimeter))
     print("Cost: ${:.2f} ".format(cost))
